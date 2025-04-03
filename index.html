@@ -1,0 +1,71 @@
+<!-- 
+premise: site about traditionally very masc-branded subject
+
+two style sheets tho:
+    - one that conforms to the expected masc aesthetic
+    - one that is way more femme looking
+
+html item and js code to switch between the two sheets at a click
+    ->  "theme" dropdown w two themes
+        OR
+    ->  two corresponding emoji buttons
+-->
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <!-- TODO: link stylesheet via code -->
+    </head>
+
+    <body>
+        <header> <!-- select theme -->
+            <p>Select theme: </p>
+            <!-- placeholder values for now -->
+            <button class="theme-button">⚽</button>
+            <button class="theme-button">🩰</button>
+            <!-- TODO: add running function on click once we have function -->
+        </header>
+
+        <div> <!-- sports! -->
+            <h3 id="main-title">Sports!!</h3>
+            <p id="main-body">
+                Sport is a form of physical activity or game. 
+                Often competitive and organized, sports use, maintain, or improve physical ability and skills. 
+                They also provide enjoyment to participants and, in some cases, entertainment to spectators. 
+                Many sports exist, with different participant numbers, 
+                some are done by a single person with others being done by hundreds. 
+                Most sports take place either in teams or competing as individuals. 
+                Some sports allow a "tie" or "draw", in which there is no single winner; 
+                others provide tie-breaking methods to ensure one winner.  
+                A number of contests may be arranged in a tournament format, 
+                producing a champion. Many sports leagues make an annual champion by arranging games 
+                in a regular sports season, followed in some cases by playoffs. 
+            </p>
+
+            <!-- some images of sports! -->
+                <!-- they should change with the theme 
+                    => TODO: link as background images in css -->
+                <!-- masc theme options: 
+                    football, rugby, athletics, swimming, snowboarding, chess, e-sports, hockey -->
+                <!-- femme theme options: 
+                    ballet, gymnastics, cheerleading, softball, rollerskating, figure skating -->
+                <!-- ideally both feature a mix of genders to not tie it to that, 
+                    ie women's footy, male gymnist, etc -->
+                <!-- => TODO: locate suitable images -->
+            <ul>
+                <li><div id="sport-image-1" class="sport-image"></div></li>
+                <li><div id="sport-image-2" class="sport-image"></div></li>
+                <li><div id="sport-image-3" class="sport-image"></div></li>
+                <li><div id="sport-image-4" class="sport-image"></div></li>
+                <li><div id="sport-image-5" class="sport-image"></div></li>
+            </ul>
+        </div>
+
+        <footer> <!-- source of text: wikipedia -->
+            <p>Source: <a href="https://en.wikipedia.org/wiki/Sport">wikipedia.org/Sport</a></p>
+        </footer>
+    </body>
+
+</html>
