@@ -15,6 +15,8 @@ html item and js code to switch between the two sheets at a click
 <html>
 
     <head>
+        <script src="switchTheme.js"></script>
+
         <!-- TODO: link stylesheet via code -->
         <link rel="stylesheet" href="masc.css">
         <!-- <link rel="stylesheet" href="femme.css"> -->
@@ -24,9 +26,9 @@ html item and js code to switch between the two sheets at a click
         <header class="flex"> <!-- select theme -->
             <p id="select-theme">Select theme: </p>
             <!-- placeholder values for now -->
-            <button class="theme-button">🚫</button> <!-- no stylesheet, the pure html garbage -->
-            <button class="theme-button">⚽</button>
-            <button class="theme-button">🩰</button>
+            <button class="theme-button" onclick="switchTheme('No Theme')">🚫</button> <!-- no stylesheet, the pure html garbage -->
+            <button class="theme-button" onclick="switchTheme('Footy')">⚽</button>
+            <button class="theme-button" onclick="switchTheme('Ballet')">🩰</button>
             <!-- TODO: add running function on click once we have function -->
         </header>
 
