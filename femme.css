@@ -1,0 +1,158 @@
+@font-face {
+    font-family: "PoetsonOne";
+    src: url("fonts/Poetsen_One/PoetsenOne-Regular.ttf");
+}
+@font-face {
+    font-family: "PatrickHand";
+    src: url("fonts/Patrick_Hand/PatrickHand-Regular.ttf");
+}
+
+/* give it some background & font color */
+/* center or right align footer text */
+body {
+    background: linear-gradient(deeppink, red);
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+header, footer {
+    background: white;
+    color: deeppink;
+    margin: 0;
+    padding: 10px;
+}
+/* put theme selection in header in line and/or to the right side */
+header {
+    justify-content: end;
+    align-items: center;
+    background: lightpink;
+}
+.theme-button {
+    padding: 5px;
+    margin: 5px;
+    font-size: 19.5px;
+    background: white;
+    border: 2px solid lightpink;
+    border-radius: 30%;
+    box-shadow: 2px 2px deeppink;
+}
+#select-theme {
+    padding: 5px;
+}
+a {
+    color: pink;
+}
+
+/* give it some fitting fonts & font styles */
+h3 {
+    font-family: "PoetsonOne", sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+    margin: 0;
+    padding: 5px;
+}
+p {
+    font-family: "PatrickHand", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding: 5px;
+}
+
+/* make main text section nice */
+#main {
+    text-align: left;
+    text-shadow: 0 0 3px red;
+    margin: 20px;
+}
+#main-title {
+    padding: 0 10px 0 20px;
+}
+#main-body {
+    padding: 15px 0 20px 20px;
+    color: lightpink;
+}
+
+/* arrange images in list */
+ul {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+/* remove list dots -> set to none */
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* make images look nice (ie spacing around them, maybe an outline and/or shadow) */
+.sport-image {
+    height: 195px;
+    width: 195px;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 50%;
+    margin: 23px 5px 0 5px;
+    
+    /* hide text */
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/* add images to image list */
+#sport-image-1 {
+    background-image: url("images/synchro-swimming-sub-buzz-1572-1723310275-1.webp");
+    background-position: 70%;
+}
+#sport-image-4 {
+    background-image: url("images/gymnastics-240627-Fred-Richard-0912-zk-3672d3.webp");
+    background-position: 70%;
+}
+#sport-image-3 {
+    background-image: url("images/cheerleading-2.jpg");
+}
+#sport-image-2 {
+    background-image: url("images/figure-skating-2.jpg");
+    background-position: 35%;
+}
+#sport-image-5 {
+    background-image: url("images/ballet-nutpartgomes1gsrc.jpg");
+    background-position: 60%;
+}
+
+
+/* 
+masc theme options: 
+    football, ✅
+    rugby, 
+    athletics, 
+    swimming, 
+    snowboarding, 
+    chess, 
+    e-sports,
+    hockey, ✅
+    basketball, ✅
+    golf, 
+    weight lifting, ✅
+    baseball, ✅
+    hiphop,
+femme theme options: 
+    ballet, ✅
+    gymnastics, ✅
+    cheerleading, ✅
+    softball, 
+    rollerskating, 
+    figure skating, ✅
+    synchronised swimming, ✅
+    yoga, 
+    ballroom,  
+*/
+/* copy base css structure from masc ✅ */
+/* replace relevant values for femme version ✅ */

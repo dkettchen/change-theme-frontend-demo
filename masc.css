@@ -1,0 +1,214 @@
+/* Tourney */
+@font-face {
+    font-family: "Tourney";
+    src: url("fonts/Tourney/Tourney.ttf");
+    font-style: normal;
+}
+@font-face {
+    font-family: "Tourney";
+    src: url("fonts/Tourney/Tourney-italic.ttf");
+    font-style: italic;
+}
+/* Lato */
+@font-face {
+    font-family: "Lato";
+    src: url("fonts/Lato/Lato-Regular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("fonts/Lato/Lato-Italic.ttf");
+    font-style: italic;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("fonts/Lato/Lato-Black.ttf");
+    font-style: normal;
+    font-weight: bolder;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("fonts/Lato/Lato-BlackItalic.ttf");
+    font-style: italic;
+    font-weight: bolder;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("fonts/Lato/Lato-Bold.ttf");
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("fonts/Lato/Lato-BoldItalic.ttf");
+    font-style: italic;
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("fonts/Lato/Lato-Light.ttf");
+    font-style: normal;
+    font-weight: lighter;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("fonts/Lato/Lato-LightItalic.ttf");
+    font-style: italic;
+    font-weight: lighter;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("fonts/Lato/Lato-Thin.ttf");
+    font-style: normal;
+    font-weight: 100;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("fonts/Lato/Lato-ThinItalic.ttf");
+    font-style: italic;
+    font-weight: 100;
+}
+
+/* give it some background & font color */
+/* center or right align footer text */
+body {
+    background: linear-gradient(green, darkgreen);
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+header, footer {
+    background: white;
+    color: darkgreen;
+    margin: 0;
+    padding: 10px;
+}
+/* put theme selection in header in line and/or to the right side */
+header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background: limegreen;
+}
+.theme-button {
+    padding: 5px;
+    margin: 5px;
+    font-size: 19.5px;
+    background: white;
+    border: 2px solid lightgreen;
+    border-radius: 30%;
+    box-shadow: 2px 2px green;
+}
+#select-theme {
+    padding: 5px;
+}
+a {
+    color: limegreen;
+}
+
+/* give it some fitting fonts & font styles */
+h3 {
+    font-family: "Tourney", sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+    margin: 0;
+    padding: 5px;
+}
+p {
+    font-family: "Lato", sans-serif;
+    font-size: 19.5px;
+    font-weight: bold;
+    margin: 0;
+    padding: 5px;
+}
+
+/* make main text section nice */
+#main {
+    display: flex;
+    text-align: left;
+    text-shadow: 0 0 3px darkgreen;
+    margin: 20px;
+}
+#main-title {
+    padding: 15px 10px 0 20px;
+}
+#main-body {
+    padding: 15px 0 20px 20px;
+    color: lightgreen;
+}
+
+/* arrange images in list */
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+/* remove list dots -> set to none */
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* make images look nice (ie spacing around them, maybe an outline and/or shadow) */
+.sport-image {
+    height: 220px;
+    width: 215px;
+    background-size: cover;
+    background-position: 50%;
+    
+    /* hide text */
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/* add images to image list */
+#sport-image-1 {
+    background-image: url("images/baseball.webp");
+}
+#sport-image-2 {
+    background-image: url("images/olympic-games-weight-lifting-Lasha-1024x683.jpg");
+}
+#sport-image-3 {
+    background-image: url("images/womens-basketball.webp");
+}
+#sport-image-4 {
+    background-image: url("images/hockey-Marc-Andre-Fleury-Vegas-Golden-Knights-Stanley-Cup-Final-2018.webp");
+    background-position: 70%;
+}
+#sport-image-5 {
+    background-image: url("images/womens-football.jpg");
+}
+
+
+
+/* 
+masc theme options: 
+    football, ✅
+    rugby, 
+    athletics, 
+    swimming, 
+    snowboarding, 
+    chess, 
+    e-sports,
+    hockey, ✅
+    basketball, ✅
+    golf, 
+    weight lifting, ✅
+    baseball, ✅
+    hiphop,
+femme theme options: 
+    ballet, 
+    gymnastics, 
+    cheerleading, 
+    softball, 
+    rollerskating, 
+    figure skating, 
+    synchronised swimming, 
+    yoga, 
+    ballroom,  
+*/
